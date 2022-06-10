@@ -1019,8 +1019,8 @@
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>.\User\User_c\RF.C</PathWithFileName>
-      <FilenameWithoutPath>RF.C</FilenameWithoutPath>
+      <PathWithFileName>.\User\User_c\RF_433M.c</PathWithFileName>
+      <FilenameWithoutPath>RF_433M.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>
@@ -1087,8 +1087,8 @@
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>.\User\User_h\RF.H</PathWithFileName>
-      <FilenameWithoutPath>RF.H</FilenameWithoutPath>
+      <PathWithFileName>.\User\User_h\RF_433M.h</PathWithFileName>
+      <FilenameWithoutPath>RF_433M.h</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>

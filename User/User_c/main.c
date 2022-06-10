@@ -1,7 +1,7 @@
 #include "stm32f4xx.h" // 注意更改这个文件的#define STM32F401xx为自己的芯片型号
 #include "Delay.h"
 #include "Usart.h"
-#include "RF.H"
+#include "RF_433M.H"
 int main()
 {
 	u8 DAT[3] = {0xA5, 0x6D, 0x12};

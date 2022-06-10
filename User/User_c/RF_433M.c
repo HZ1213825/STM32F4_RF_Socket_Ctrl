@@ -1,4 +1,4 @@
-#include "RF.H"
+#include "RF_433M.H"
 
 u8 RF_READ_OK = 0;                  //解码成功标志
 u8 RF_READ_ins = 0;                 //状态指示
@@ -15,7 +15,7 @@ void RF_Read_GPIO_init(void)
     RF_Read_GPIO_RCC;                             //打开GPIO时钟
     GPIO_Initstruct.GPIO_Mode = GPIO_Mode_IN;     //输入模式
     GPIO_Initstruct.GPIO_OType = GPIO_OType_OD;   //开漏输入模式
-    GPIO_Initstruct.GPIO_Pin = RF_Read_GPIO_Pin;  //引脚0
+    GPIO_Initstruct.GPIO_Pin = RF_Read_GPIO_Pin;  //引脚
     GPIO_Initstruct.GPIO_PuPd = GPIO_PuPd_UP;     //上拉模式
     GPIO_Initstruct.GPIO_Speed = GPIO_High_Speed; //高速模式
     GPIO_Init(RF_Read_GPIOx, &GPIO_Initstruct);   //初始化GPIO
@@ -26,11 +26,11 @@ void RF_Read_EXTI_init(void)
     EXTI_InitTypeDef EXTI_Initstruct;                      //创建外部中断初始化结构体
     RCC_APB2PeriphClockCmd(RCC_APB2Periph_SYSCFG, ENABLE); //打开时钟
     RF_Read_EXIT_Link;                                     //将GPIO与外部中断连接
-    EXTI_Initstruct.EXTI_Line = RF_Read_EXIT_Pin;          //配置的是外部中断0
+    EXTI_Initstruct.EXTI_Line = RF_Read_EXIT_Pin;          //配置的是外部中断
     EXTI_Initstruct.EXTI_LineCmd = ENABLE;                 //使能
     EXTI_Initstruct.EXTI_Mode = EXTI_Mode_Interrupt;       //选择中断模式
     EXTI_Initstruct.EXTI_Trigger = EXTI_Trigger_Rising;    //上升沿模式
-    EXTI_Init(&EXTI_Initstruct);                           //初始化外部中断0
+    EXTI_Init(&EXTI_Initstruct);                           //初始化外部中断
 }
 //读取，配置NVIC
 void RF_Read_EXTI_NVIC(void)

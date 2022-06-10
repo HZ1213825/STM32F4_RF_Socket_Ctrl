@@ -32,7 +32,7 @@
 
 #define RF_Rean_Len 3
 extern u8 RF_READ_OK;                //解码成功标志
-extern u8 RF_READ_data[RF_Rean_Len]; //发送的数据
+extern u8 RF_READ_data[RF_Rean_Len]; //接收的数据
 
 void RF_Read_Init(void);
 void RF_Send(u8 *Dat, u8 Len);

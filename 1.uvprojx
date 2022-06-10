@@ -814,9 +814,9 @@
               <FilePath>.\User\User_c\Usart.c</FilePath>
             </File>
             <File>
-              <FileName>RF.C</FileName>
+              <FileName>RF_433M.c</FileName>
               <FileType>1</FileType>
-              <FilePath>.\User\User_c\RF.C</FilePath>
+              <FilePath>.\User\User_c\RF_433M.c</FilePath>
             </File>
           </Files>
         </Group>
@@ -844,9 +844,9 @@
               <FilePath>.\User\User_h\Usart.h</FilePath>
             </File>
             <File>
-              <FileName>RF.H</FileName>
+              <FileName>RF_433M.h</FileName>
               <FileType>5</FileType>
-              <FilePath>.\User\User_h\RF.H</FilePath>
+              <FilePath>.\User\User_h\RF_433M.h</FilePath>
             </File>
           </Files>
         </Group>

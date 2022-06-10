@@ -4,7 +4,8 @@
         "stm32f4xx.h": "c",
         "usart.h": "c",
         "stdio.h": "c",
-        "rf.h": "c"
+        "rf.h": "c",
+        "rf_433m.h": "c"
     },
     "files.autoGuessEncoding": true
 }
